@@ -1,5 +1,3 @@
-
-
 console.log("day 3")
 
 // oparator - Symbol + - * / %
