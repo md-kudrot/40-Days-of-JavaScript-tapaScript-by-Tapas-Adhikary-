@@ -90,6 +90,18 @@ const vv = () => console.log("this is arrow function")
 console.log(vv());
 
 // IIFE (Immediately Invoked function Expression)
-(function() {
-        console.log("hello")
-})();
+(function(count) {
+        console.log("IIFE", count)
+})(45);
+
+
+//Recursion
+function buyBanana(count){
+    console.log("buying banana",count)
+    if(count === 0){
+        console.log("No more banana")
+        return ;
+    }
+    buyBanana(count - 1)
+}
+buyBanana(5)
