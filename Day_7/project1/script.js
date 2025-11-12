@@ -8,13 +8,27 @@ function rpcGamre() {
 
     computerCho = Math.floor(Math.random() * 3) + 1;
 
-    if (computerCho === 1) {
-        computerCho = "rock"
-    } else if (computerCho === 2) {
-        computerCho = "pepper"
-    } else {
-        computerCho = "scissors"
+    // if (computerCho === 1) {
+    //     computerCho = "rock"
+    // } else if (computerCho === 2) {
+    //     computerCho = "pepper"
+    // } else {
+    //     computerCho = "scissors"
+    // }
+
+    switch (computerCho) {
+        case 1:
+            computerCho = "rock";
+            break;
+        case 2:
+            computerCho = "pepper";
+            break;
+        default:
+            computerCho = "scissors";
     }
+
+
+
     console.log("computer choice = ", computerCho)
 
     if (computerCho === userChoice) {

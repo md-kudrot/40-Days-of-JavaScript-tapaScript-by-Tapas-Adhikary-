@@ -6,16 +6,21 @@ function input() {
     let UserSelectNumPmt = prompt("Enter a number between 1 and 10:");
     UserSelectNum = Number(UserSelectNumPmt);
 
+    if (UserSelectNum === 0){
+        alert("So sad")
+    }else{
+        checking();
+    }
+
     console.log("Your guess:", UserSelectNum);
     console.log("Secret number:", secretNum);
-    checking();
 }
 
 function checking() {
-    console.log(secretNum)
+    // console.log(secretNum)
     if (secretNum > UserSelectNum) {
         count++;
-        console.log("You are smaller than the computer, try again!");
+        // console.log("You are smaller than the computer, try again!");
         alert("You are smaller than the computer, try again!");
         input();
 
@@ -41,12 +46,12 @@ function checking() {
 }
 
 function randomN() {
-    const randomNum = Math.floor(Math.random() * 10 + 1);
+    const randomNum = Math.floor(Math.random() * 10) + 1;
     secretNum = randomNum;
     console.log("New secret number:", secretNum);
-    setTimeout(() => {
-        input();
-    }, 1000);
+
+    input();
+
 }
 
 randomN();
