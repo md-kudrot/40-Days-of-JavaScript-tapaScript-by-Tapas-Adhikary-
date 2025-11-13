@@ -27,3 +27,4 @@ switch (computerCho) {
 //     computerCho = "scissors"
 // }
 // console.log("computer choice = ", computerCho)
+
