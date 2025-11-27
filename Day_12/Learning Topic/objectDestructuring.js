@@ -21,7 +21,7 @@ const student = {
 const nam = student.name
 // we can write this in shortly
 const { name } = student
-console.log(name)
+console.log(name) //John Williamson
 
 // ********************
 // use can access multiple property
@@ -90,9 +90,6 @@ const getStudent = () => {
 const {name: anotherStuName , subjects: anotherStuSub} = getStudent();
 
 // console.log(anotherStuName,anotherStuSub)
-
-
-
 
 
 
