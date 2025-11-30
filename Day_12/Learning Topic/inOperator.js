@@ -9,9 +9,9 @@ const person = {
 }
 
 if (person.student) {
-    console.log("This property is there")
+    console.log("This property is there") 
 } else {
-    console.log("there is no property")
+    console.log("there is no property")// output.. which is wrong
 }
 
 

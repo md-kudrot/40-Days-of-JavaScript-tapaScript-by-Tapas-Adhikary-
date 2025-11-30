@@ -9,7 +9,7 @@ const myArr = Object.entries(myObj)
 console.log(myArr)
 
 
-//convert arr to obj
+//Object.entries() returns an array of key–value pairs from an object
 
 const entries = new Map([
     ["foo","bar"],
