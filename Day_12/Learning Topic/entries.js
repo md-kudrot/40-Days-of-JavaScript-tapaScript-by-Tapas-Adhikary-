@@ -17,4 +17,4 @@ const entries = new Map([
 ])
 
 const objEntries = Object.fromEntries(entries)
-console.log(objEntries)
+// console.log(objEntries)
