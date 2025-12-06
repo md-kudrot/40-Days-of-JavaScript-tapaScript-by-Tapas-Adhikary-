@@ -1,0 +1,1 @@
+input.splice(minIndex, 1)

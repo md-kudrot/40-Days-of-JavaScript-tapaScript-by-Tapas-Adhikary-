@@ -14,7 +14,7 @@ const name = {
 
 // join the function with name object . so that we need to use "call" method
 
-greeting.call(name, "kk")
+greeting.call(name)
 
 // The way to pass peramiter useing "call" method
 
